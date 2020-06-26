@@ -8,7 +8,7 @@ const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
 mongoose.connect(
-  `mongodb+srv://abhiadmin:${process.env.MONGO_ATLAS_PASSWORD}@cluster0.nepfn.mongodb.net/<dbname>?retryWrites=true&w=majority`,
+  `mongodb+srv://abhiadmin:${process.env.MONGO_ATLAS_PASSWORD}@cluster0.nepfn.mongodb.net/products?retryWrites=true&w=majority`,
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
